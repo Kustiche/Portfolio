@@ -4247,7 +4247,8 @@ body {
 }
 .hero__img {
   width: 100%;
-  height: 250px;
+  height: auto;
+  border-radius: 50%;
 }
 .hero__title {
   margin-bottom: 10px;
