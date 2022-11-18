@@ -10,12 +10,16 @@
 
   &__title
     margin-bottom: 20px
+    @media screen and ( max-width: 765px )
+      margin-bottom: 10px
 
   &__list
     display: flex
     flex-direction: column
     align-items: flex-start
     padding-left: 40px
+    @media screen and ( max-width: 765px )
+      padding-left: 35px
 
   &__item
     margin-bottom: 10px
@@ -29,6 +33,12 @@
       border-radius: 50%
       top: 7px
       left: -38px
+    @media screen and ( max-width: 765px )
+      &::after
+        width: 20px
+        height: 20px
+        top: 12px
+        left: -30px
 
   &__heading
     margin-bottom: 5px
@@ -45,3 +55,10 @@
       left: -30px
     &::after
       transform: rotate(90deg)
+    @media screen and ( max-width: 765px )
+      font-size: 23px
+      &::after, &::before
+        width: 10px
+        left: -25px
+    @media screen and ( max-width: 425px )
+      font-size: 21px
