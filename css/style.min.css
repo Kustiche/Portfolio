@@ -4316,4 +4316,64 @@ body {
     text-align: center;
   }
 }
+
+.skills {
+  padding: 50px 0;
+}
+@media screen and (max-width: 425px) {
+  .skills {
+    padding: 25px 0;
+  }
+}
+.skills__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.skills__title {
+  margin-bottom: 15px;
+}
+.skills__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 80px;
+}
+.skills__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 200px;
+}
+.skills__icon {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+.skills__heading {
+  margin-bottom: 10px;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+.skills__text {
+  text-align: center;
+}
 /*# sourceMappingURL=style.min.css.map */
