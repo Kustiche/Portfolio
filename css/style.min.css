@@ -4416,6 +4416,13 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media screen and (max-width: 745px) {
+  .guarantees__wrap {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .guarantees__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4619,5 +4626,67 @@ body {
   .merit__heading {
     font-size: 21px;
   }
+}
+
+.contacts {
+  padding: 50px 0;
+}
+@media screen and (max-width: 425px) {
+  .contacts {
+    padding: 25px 0;
+  }
+}
+.contacts__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contacts__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 600px;
+  width: 100%;
+  margin-right: auto;
+}
+.contacts__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px 0;
+}
+.contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts__link:hover .contacts__text {
+  color: #1EB5B8;
+}
+.contacts__icon {
+  max-width: 100px;
+  height: 100px;
+}
+.contacts__icon--push {
+  margin-right: 30px;
+}
+.contacts__text {
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
 }
 /*# sourceMappingURL=style.min.css.map */
