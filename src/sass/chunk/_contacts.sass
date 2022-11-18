@@ -1,0 +1,37 @@
+.contacts
+  padding: 50px 0
+  @media screen and ( max-width: 425px )
+    padding: 25px 0
+
+  &__wrap
+    display: flex
+    flex-direction: column
+
+  &__title
+
+  &__content
+    display: flex
+    justify-content: space-between
+    max-width: 600px
+    width: 100%
+    margin-right: auto
+
+  &__inner
+    display: flex
+    flex-direction: column
+    gap: 15px 0
+
+  &__link
+    display: flex
+    align-items: center
+    &:hover .contacts__text
+      color: $java
+
+  &__icon
+    max-width: 100px
+    height: 100px
+    &--push
+      margin-right: 30px
+
+  &__text
+    transition: color .4s
