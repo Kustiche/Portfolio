@@ -4420,23 +4420,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-.guarantees__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 40px;
+  width: 100%;
+  gap: 30px 15px;
 }
-.guarantees__inner:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 1110px) {
+  .guarantees__cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 .guarantees__card {
   display: -webkit-box;
@@ -4460,12 +4456,34 @@ body {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 .guarantees__card:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+@media screen and (max-width: 1110px) {
+  .guarantees__card {
+    max-width: 420px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .guarantees__card {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 745px) {
+  .guarantees__card {
+    max-width: 520px;
+  }
 }
 .guarantees__img {
   margin-bottom: 15px;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 425px) {
+  .guarantees__img {
+    margin-bottom: 0;
+  }
 }
 .guarantees__heading {
   margin-bottom: 5px;
@@ -4473,8 +4491,28 @@ body {
   font-size: 25px;
   text-align: center;
 }
+@media screen and (max-width: 1110px) {
+  .guarantees__heading {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 885px) {
+  .guarantees__heading {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 745px) {
+  .guarantees__heading {
+    max-width: 100%;
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .guarantees__heading {
+    font-size: 21px;
+  }
+}
 .guarantees__text {
-  font-size: 18px;
   text-align: center;
 }
 /*# sourceMappingURL=style.min.css.map */
