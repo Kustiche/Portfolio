@@ -4488,6 +4488,8 @@ body {
 .guarantees__heading {
   margin-bottom: 5px;
   max-width: 200px;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-weight: 600;
   font-size: 25px;
   text-align: center;
 }
@@ -4514,5 +4516,76 @@ body {
 }
 .guarantees__text {
   text-align: center;
+}
+
+.merit {
+  padding: 50px 0;
+}
+@media screen and (max-width: 425px) {
+  .merit {
+    padding: 25px 0;
+  }
+}
+.merit__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.merit__title {
+  margin-bottom: 20px;
+}
+.merit__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 40px;
+}
+.merit__item {
+  margin-bottom: 10px;
+  position: relative;
+}
+.merit__item::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 2px dashed #D2E9E3;
+  border-radius: 50%;
+  top: 7px;
+  left: -38px;
+}
+.merit__heading {
+  margin-bottom: 5px;
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  position: relative;
+}
+.merit__heading::after, .merit__heading::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  border-top: 2px solid #D2E9E3;
+  top: 50%;
+  left: -30px;
+}
+.merit__heading::after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=style.min.css.map */
