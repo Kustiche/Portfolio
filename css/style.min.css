@@ -335,6 +335,7 @@ template {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -4167,12 +4168,13 @@ body {
 
 .header {
   padding-top: 25px;
-  padding-bottom: 50px;
-}
-@media screen and (max-width: 425px) {
-  .header {
-    padding-bottom: 25px;
-  }
+  padding-bottom: 25px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #116466;
+  opacity: 0.8;
+  z-index: 1;
 }
 .header__wrap {
   display: -webkit-box;
@@ -4187,11 +4189,12 @@ body {
 }
 
 .hero {
-  padding: 50px 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 425px) {
   .hero {
-    padding: 25px 0;
+    padding-bottom: 25px;
   }
 }
 .hero__wrap {
