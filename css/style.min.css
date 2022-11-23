@@ -4700,6 +4700,16 @@ body {
 .contacts__icon {
   max-width: 80px;
   height: 80px;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -o-transition: transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.contacts__icon:hover {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
 }
 @media screen and (max-width: 425px) {
   .contacts__icon {
