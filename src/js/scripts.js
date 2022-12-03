@@ -1,1 +1,1 @@
-@include('spollers.js')
+@include('../components/spollers/spollers.js')
