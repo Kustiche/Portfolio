@@ -71,8 +71,18 @@
     @media screen and ( max-width: 425px )
       margin-bottom: 0
 
-  &__text
-    @media screen and ( max-width: 768px )
-      text-align: center
-    @media screen and ( max-width: 425px )
-      text-align: center
+  &__list
+    padding-left: 20px
+
+  &__item
+    margin-bottom: 10px
+    position: relative
+    &::after
+      position: absolute
+      content: ""
+      width: 10px
+      height: 10px
+      border: 1px solid $java
+      border-radius: 20px
+      top: 9px
+      left: -19px
