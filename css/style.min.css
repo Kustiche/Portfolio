@@ -4305,8 +4305,9 @@ body.touch .menu__link {
   padding-top: 160px;
   padding-bottom: 50px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .hero {
+    padding-top: 135px;
     padding-bottom: 25px;
   }
 }
@@ -4344,17 +4345,6 @@ body.touch .menu__link {
   max-width: 320px;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
-  .hero__inner {
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .hero__inner {
-    margin-bottom: 15px;
-  }
-}
 .hero__inner-img {
   margin-bottom: 25px;
   width: 250px;
@@ -4371,14 +4361,9 @@ body.touch .menu__link {
   font-size: 32px;
   line-height: 44px;
 }
-@media screen and (max-width: 768px) {
-  .hero__title {
-    font-size: 28px;
-  }
-}
 @media screen and (max-width: 425px) {
   .hero__title {
-    font-size: 26px;
+    font-size: 27px;
   }
 }
 .hero__subtitle {
@@ -4390,12 +4375,7 @@ body.touch .menu__link {
 }
 @media screen and (max-width: 768px) {
   .hero__subtitle {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .hero__subtitle {
-    font-size: 20px;
+    margin-bottom: 15px;
   }
 }
 .hero__content {
@@ -4419,11 +4399,6 @@ body.touch .menu__link {
 }
 .hero__heading {
   margin-bottom: 15px;
-}
-@media screen and (max-width: 425px) {
-  .hero__heading {
-    margin-bottom: 0;
-  }
 }
 @media screen and (max-width: 768px) {
   .hero__text {
