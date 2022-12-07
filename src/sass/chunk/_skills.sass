@@ -14,29 +14,30 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-around
-    gap: 30px 120px
+    gap: 50px 120px
 
   &__card
-    display: flex
-    flex-direction: column
-    align-items: center
-    max-width: 150px
-    min-height: 180px
-    position: relative
-    transition: all .4s
-    &:hover
+    width: 150px
+    &:hover .skills__content
       transform: rotateY(-180deg)
     &:hover .skills__icon
       opacity: 0
     &:hover .skills__inner
       opacity: 1
-    @media screen and ( max-width: 600px )
-      max-width: 100%
+
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 150px
+    position: relative
+    transition: transform .4s
 
   &__icon
     width: 100%
     height: auto
     transition: opacity .4s
+    z-index: -1
     @media screen and ( max-width: 768px )
       max-width: 120px
 
@@ -48,8 +49,8 @@
     position: absolute
     top: 0
     padding-top: 20px
-    min-width: 270px
-    height: 100%
+    max-width: 175px
+    height: auto
     background-color: $genoa
     transition: all .4s
     border-radius: 20px
@@ -63,6 +64,7 @@
     font-weight: 600
     font-size: 20px
     line-height: 27px
+    text-align: center
 
   &__text
     text-align: center

@@ -6,7 +6,8 @@ body
   position: fixed
   top: 0
   left: 0
-  width: 100%
+  right: 0
+  max-width: 100%
   z-index: 10
   background-color: $genoa
   padding: 15px 0
@@ -62,19 +63,18 @@ body.touch
 
 /*-------------------------*/
 
-@media screen and ( min-width: 768px )
+@media screen and ( min-width: 980px )
   .menu
     display: flex
     align-items: center
 
     &__item
       margin-right: 30px
-      padding: 10px 0
       color: $skeptic
       &:last-child
         margin-right: 0
 
-@media screen and ( max-width: 768px )
+@media screen and ( max-width: 980px )
   .burger
     z-index: 5
     display: block
