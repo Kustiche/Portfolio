@@ -14,26 +14,33 @@
 				display: none
 
 	&__title
-		font-size: 24px
+		font-family: "OpenSans-SemiBold", sans-serif
+		font-weight: 600
+		font-size: 20px
+		line-height: 27px
 		position: relative
 		padding: 10px
 		width: 100%
 		text-align: left
 		color: $skeptic
+		@media ( max-width: 425px )
+			font-size: 18px
 
 	&__text
 		padding: 0 10px 10px 15px
 		color: $skeptic
 
 	&.init .spollers__title
-		padding: 20px 0
+		padding: 20px 50px 20px 0
+		@media ( max-width: 768px )
+			padding: 10px 50px 10px 0
 
 	&.init .spollers__title::before,
 	&.init .spollers__title::after
 		content: ''
 		position: absolute
 		right: 10px
-		top: 33px
+		top: 50%
 		width: 20px
 		border-top: 2px solid $skeptic
 		transition: transform 0.3s ease 0s
