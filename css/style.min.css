@@ -949,6 +949,7 @@ body.touch .menu__link {
   .works__excerpt {
     font-size: 16px;
     line-height: 20px;
+    width: 90%;
   }
   .works__excerpt--already {
     width: 60%;
@@ -1085,6 +1086,13 @@ body.touch .menu__link {
 .spollers__text {
   padding: 0 10px 10px 15px;
   color: #D2E9E3;
+  font-size: 18px;
+  line-height: 27px;
+}
+@media (max-width: 425px) {
+  .spollers__text {
+    font-size: 16px;
+  }
 }
 .spollers.init .spollers__title {
   padding: 20px 50px 20px 0;
