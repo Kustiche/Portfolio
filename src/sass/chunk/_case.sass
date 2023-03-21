@@ -124,13 +124,11 @@
       border-top: 1px solid $skeptic
       top: 103%
       left: 0
-      transition: width .4s
+      transition: border-top .4s
     &:hover
       color: $java
       &::after
-        width: 0
-        left: 50%
-        transform: translateX(-50%)
+        border-top: 1px solid $java
 
   &__passage
     @media ( max-width: 768px )
