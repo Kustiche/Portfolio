@@ -850,8 +850,17 @@ body.touch .menu__link {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 40px;
   width: 100%;
   gap: 20px;
+}
+.works__inner:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .works__inner {
+    margin-bottom: 20px;
+  }
 }
 .works__link {
   max-width: 350px;
@@ -905,8 +914,8 @@ body.touch .menu__link {
   position: absolute;
   font-family: "OpenSans-SemiBold", sans-serif;
   font-weight: 600;
-  font-size: 25px;
-  line-height: 34px;
+  font-size: 23px;
+  line-height: 33px;
   text-transform: capitalize;
   top: 0;
   left: 50%;
@@ -1238,19 +1247,15 @@ body.touch .menu__link {
   border-top: 1px solid #D2E9E3;
   top: 103%;
   left: 0;
-  -webkit-transition: width 0.4s;
-  -o-transition: width 0.4s;
-  transition: width 0.4s;
+  -webkit-transition: border-top 0.4s;
+  -o-transition: border-top 0.4s;
+  transition: border-top 0.4s;
 }
 .case__link-author:hover {
   color: #1EB5B8;
 }
 .case__link-author:hover::after {
-  width: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  border-top: 1px solid #1EB5B8;
 }
 @media (max-width: 768px) {
   .case__passage {
