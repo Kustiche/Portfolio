@@ -1189,6 +1189,7 @@ body.touch .menu__link {
   margin-bottom: 0;
 }
 .case__img {
+  margin: 0 auto;
   margin-bottom: 20px;
   max-width: 700px;
   width: 100%;
@@ -1214,6 +1215,7 @@ body.touch .menu__link {
   }
 }
 .case__link {
+  margin: 0 auto;
   margin-bottom: 15px;
   padding: 19px 39px;
   background-color: #1EB5B8;
