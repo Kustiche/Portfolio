@@ -45,13 +45,15 @@
     position: absolute
     top: 0
     padding-top: 20px
-    min-height: 100%
+    min-height: 230px
     background-color: $genoa
     transition: all .4s
     border-radius: 20px
     opacity: 0
     pointer-events: none
     transform: rotateY(-180deg)
+    @media screen and ( max-width: 576px )
+      min-height: 205px
 
   &__heading
     margin-bottom: 10px
